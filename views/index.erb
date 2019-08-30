@@ -29,37 +29,19 @@
                     <i class="fa fa-2x fa-plus-circle pull-right"></i>
                 </div>
                 <div class="panel-body" style="max-height: 346px;">
-                    <div id="TODO" class="kanban-centered"><article class="kanban-entry grab" id="item3" draggable="true">
-                            <div class="kanban-entry-inner">
-                                <div class="kanban-label">
-                                    <h2><a href="#">Arlind Nushi</a> <span>checked in at</span> <a href="#">Laborator</a></h2>
-
-                                    <blockquote>Great place, feeling like in home.<br><img src="https://i.ytimg.com/vi/if-2M3K1tqk/maxresdefault.jpg" height=500px width=200px></blockquote>
-                            </div>
-                        </article>
-
-                        
-
-                        
-
-                        
-
-                        <article class="kanban-entry grab" id="item4" draggable="true">
-                            <div class="kanban-entry-inner">
-                                <div class="kanban-label">
-                                    <h2><a href="#">Arber Nushi</a> <span>changed his</span> <a href="#">Profile Picture</a></h2>
-
-                                    <blockquote>Pianoforte principles our unaffected not for astonished travelling are particular.</blockquote>
-
-                                    <img src="http://themes.laborator.co/neon/assets/images/timeline-image-3.png" class="img-responsive img-rounded full-width">
-                                </div>
-                            </div>
+                    <div id="TODO" class="kanban-centered"><article class="kanban-entry grab" id="item1" draggable="true">
+                            
                         </article>
 
                     </div>
                 </div>
                 <div class="panel-footer">
-                    <a href="#" onclick="">Add a card...</a>
+                    <a onclick ="createCard()" >Add a card...</a>
+                    <script>
+                    function createCard() {
+                        document.getElementById("TODO").innerHTML += '<article class="kanban-entry grab" id="item1" draggable="true"> <div class="kanban-entry-inner"> <div class="kanban-label"><h2><a href="#" contenteditable="true">Insert your title here</a></h2><blockquote id="demo" contenteditable="true">Insert your text here</blockquote></div></div></article>';
+                    }
+                    </script>
                 </div>
             </div>
             <!--sütun bitiş-->
@@ -71,44 +53,17 @@
                 </div>
                 <div class="panel-body" style="max-height: 346px;">
                     <div id="DOING" class="kanban-centered"><article class="kanban-entry grab" id="item2" draggable="true">
-                            <div class="kanban-entry-inner">
-                                <div class="kanban-label">
-                                    <h2><a href="#">Job Meeting</a></h2>
-                                    <p>You have a meeting at <strong>Laborator Office</strong> Today.</p>
-                                </div>
-                            </div>
-                        </article><article class="kanban-entry grab" id="item1" draggable="true">
-                            <div class="kanban-entry-inner">
-                                <div class="kanban-label">
-                                    <h2><a href="#">Art Ramadani</a> <span>posted a status update</span></h2>
-                                    <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="kanban-entry grab" id="item5" draggable="true">
-                            <div class="kanban-entry-inner">
-
-                                <div class="kanban-label">
-                                    <h2><a href="#">Art Ramadani</a> <span>posted a status update</span></h2>
-                                    <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="kanban-entry grab" id="item6" draggable="true">
-                            <div class="kanban-entry-inner">
-                                <div class="kanban-label">
-                                    <h2><a href="#">Job Meeting</a></h2>
-                                    <p>You have a meeting at <strong>Laborator Office</strong> Today.</p>
-                                </div>
-                            </div>
                         </article>
 
                     </div>
                 </div>
                 <div class="panel-footer">
-                    <a href="#">Add a card...</a>
+                    <a onclick ="createCard2()" >Add a card...</a>
+                    <script>
+                    function createCard2() {
+                        document.getElementById("DOING").innerHTML += '<article class="kanban-entry grab" id="item2" draggable="true"> <div class="kanban-entry-inner"> <div class="kanban-label"><h2><a href="#" contenteditable="true">Insert your title here</a></h2><blockquote id="demo" contenteditable="true">Insert your text here</blockquote></div></div></article>';
+                    }
+                    </script>
                 </div>
             </div>
             <!--sütun bitiş-->
@@ -121,29 +76,18 @@
                 <div class="panel-body" style="max-height: 346px;">
                     <div id="DONE" class="kanban-centered">
 
-                        <article class="kanban-entry grab" id="item5" draggable="true">
-                            <div class="kanban-entry-inner">
-
-                                <div class="kanban-label">
-                                    <h2><a href="#">Art Ramadani</a> <span>posted a status update</span></h2>
-                                    <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="kanban-entry grab" id="item6" draggable="true">
-                            <div class="kanban-entry-inner">
-                                <div class="kanban-label">
-                                    <h2><a href="#">Job Meeting</a></h2>
-                                    <p>You have a meeting at <strong>Laborator Office</strong> Today.</p>
-                                </div>
-                            </div>
+                        <article id class="kanban-entry grab" id="item3" draggable="true">
                         </article>
 
                     </div>
                 </div>
                 <div class="panel-footer">
-                    <a href="#">Add a card...</a>
+                    <a onclick ="createCard3()" >Add a card...</a>
+                    <script>
+                    function createCard3() {
+                        document.getElementById("DONE").innerHTML += '<article class="kanban-entry grab" id="item3" draggable="true"> <div class="kanban-entry-inner"> <div class="kanban-label"><h2><a href="#" contenteditable="true">Insert your title here</a></h2><blockquote id="demo" contenteditable="true">Insert your text here</blockquote></div></div></article>';
+                    }
+                    </script>
                 </div>
             </div>
             <!--sütun bitiş-->
@@ -165,57 +109,26 @@
                 </div>
             </div>
         </div>
-    </div>	<script type="text/javascript">
-	        $(function () {
-            var kanbanCol = $('.panel-body');
-            kanbanCol.css('max-height', (window.innerHeight - 150) + 'px');
-
-            var kanbanColCount = parseInt(kanbanCol.length);
-            $('.container-fluid').css('min-width', (kanbanColCount * 350) + 'px');
-
-            draggableInit();
-
-            $('.panel-heading').click(function() {
-                var $panelBody = $(this).parent().children('.panel-body');
-                $panelBody.slideToggle();
-            });
-        });
-
-        function draggableInit() {
-            var sourceId;
-
-            $('[draggable=true]').bind('dragstart', function (event) {
-                sourceId = $(this).parent().attr('id');
-                event.originalEvent.dataTransfer.setData("text/plain", event.target.getAttribute('id'));
-            });
-
-            $('.panel-body').bind('dragover', function (event) {
-                event.preventDefault();
-            });
-
-            $('.panel-body').bind('drop', function (event) {
-                var children = $(this).children();
-                var targetId = children.attr('id');
-
-                if (sourceId != targetId) {
-                    var elementId = event.originalEvent.dataTransfer.getData("text/plain");
-
-                    $('#processing-modal').modal('toggle'); //before post
+    </div>
 
 
-                    // Post data 
-                    setTimeout(function () {
-                        var element = document.getElementById(elementId);
-                        children.prepend(element);
-                        $('#processing-modal').modal('toggle'); // after post
-                    }, 1000);
-
-                }
-
-                event.preventDefault();
-            });
+<script>
+$(.task).draggable({
+    revert: function (droppableObj) {
+        if (droppableObj === false) {
+            return true;
         }
-	</script>
+    }
+})
+</script>
 
-
+<script>
+$(.box).droppable({
+    drop: function (event, ui) {
+        const task_id = ui.draggable.context.id
+        const board_id = window.location.search.split("=")[1]
+        const box_id = event.target.id
+    }
+})
+</script>
 </body></html>
