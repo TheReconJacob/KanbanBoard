@@ -1,9 +1,221 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
 
-    </head>
-    <body>
-        <p>hello world</p>
-    </body>
-</html>
+    <title>Kanban Board</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height());
+        });
+    </script>
+</head>
+<body class="">
+        <div class="container-fluid" style="min-width: 1050px;">
+        <div id="sortableKanbanBoards" class="row">
+
+            <!--sütun başlangıç-->
+            <div class="panel panel-primary kanban-col">
+                <div class="panel-heading">
+                    TODO
+                    <i class="fa fa-2x fa-plus-circle pull-right"></i>
+                </div>
+                <div class="panel-body" style="max-height: 346px;">
+                    <div id="TODO" class="kanban-centered"><article class="kanban-entry grab" id="item3" draggable="true">
+                            <div class="kanban-entry-inner">
+                                <div class="kanban-label">
+                                    <h2><a href="#">Arlind Nushi</a> <span>checked in at</span> <a href="#">Laborator</a></h2>
+
+                                    <blockquote>Great place, feeling like in home.<br><img src="https://i.ytimg.com/vi/if-2M3K1tqk/maxresdefault.jpg" height=500px width=200px></blockquote>
+                            </div>
+                        </article>
+
+                        
+
+                        
+
+                        
+
+                        <article class="kanban-entry grab" id="item4" draggable="true">
+                            <div class="kanban-entry-inner">
+                                <div class="kanban-label">
+                                    <h2><a href="#">Arber Nushi</a> <span>changed his</span> <a href="#">Profile Picture</a></h2>
+
+                                    <blockquote>Pianoforte principles our unaffected not for astonished travelling are particular.</blockquote>
+
+                                    <img src="http://themes.laborator.co/neon/assets/images/timeline-image-3.png" class="img-responsive img-rounded full-width">
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a href="#">Add a card...</a>
+                </div>
+            </div>
+            <!--sütun bitiş-->
+            <!--sütun başlangıç-->
+            <div class="panel panel-primary kanban-col">
+                <div class="panel-heading">
+                    DOING
+                    <i class="fa fa-2x fa-plus-circle pull-right"></i>
+                </div>
+                <div class="panel-body" style="max-height: 346px;">
+                    <div id="DOING" class="kanban-centered"><article class="kanban-entry grab" id="item2" draggable="true">
+                            <div class="kanban-entry-inner">
+                                <div class="kanban-label">
+                                    <h2><a href="#">Job Meeting</a></h2>
+                                    <p>You have a meeting at <strong>Laborator Office</strong> Today.</p>
+                                </div>
+                            </div>
+                        </article><article class="kanban-entry grab" id="item1" draggable="true">
+                            <div class="kanban-entry-inner">
+                                <div class="kanban-label">
+                                    <h2><a href="#">Art Ramadani</a> <span>posted a status update</span></h2>
+                                    <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="kanban-entry grab" id="item5" draggable="true">
+                            <div class="kanban-entry-inner">
+
+                                <div class="kanban-label">
+                                    <h2><a href="#">Art Ramadani</a> <span>posted a status update</span></h2>
+                                    <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="kanban-entry grab" id="item6" draggable="true">
+                            <div class="kanban-entry-inner">
+                                <div class="kanban-label">
+                                    <h2><a href="#">Job Meeting</a></h2>
+                                    <p>You have a meeting at <strong>Laborator Office</strong> Today.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a href="#">Add a card...</a>
+                </div>
+            </div>
+            <!--sütun bitiş-->
+            <!--sütun başlangıç-->
+            <div class="panel panel-primary kanban-col">
+                <div class="panel-heading">
+                    DONE
+                    <i class="fa fa-2x fa-plus-circle pull-right"></i>
+                </div>
+                <div class="panel-body" style="max-height: 346px;">
+                    <div id="DONE" class="kanban-centered">
+
+                        <article class="kanban-entry grab" id="item5" draggable="true">
+                            <div class="kanban-entry-inner">
+
+                                <div class="kanban-label">
+                                    <h2><a href="#">Art Ramadani</a> <span>posted a status update</span></h2>
+                                    <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="kanban-entry grab" id="item6" draggable="true">
+                            <div class="kanban-entry-inner">
+                                <div class="kanban-label">
+                                    <h2><a href="#">Job Meeting</a></h2>
+                                    <p>You have a meeting at <strong>Laborator Office</strong> Today.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a href="#">Add a card...</a>
+                </div>
+            </div>
+            <!--sütun bitiş-->
+
+
+        </div>
+    </div>
+
+
+    <!-- Static Modal -->
+    <div class="modal modal-static fade" id="processing-modal" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i class="fa fa-refresh fa-5x fa-spin"></i>
+                        <h4>Processing...</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>	<script type="text/javascript">
+	        $(function () {
+            var kanbanCol = $('.panel-body');
+            kanbanCol.css('max-height', (window.innerHeight - 150) + 'px');
+
+            var kanbanColCount = parseInt(kanbanCol.length);
+            $('.container-fluid').css('min-width', (kanbanColCount * 350) + 'px');
+
+            draggableInit();
+
+            $('.panel-heading').click(function() {
+                var $panelBody = $(this).parent().children('.panel-body');
+                $panelBody.slideToggle();
+            });
+        });
+
+        function draggableInit() {
+            var sourceId;
+
+            $('[draggable=true]').bind('dragstart', function (event) {
+                sourceId = $(this).parent().attr('id');
+                event.originalEvent.dataTransfer.setData("text/plain", event.target.getAttribute('id'));
+            });
+
+            $('.panel-body').bind('dragover', function (event) {
+                event.preventDefault();
+            });
+
+            $('.panel-body').bind('drop', function (event) {
+                var children = $(this).children();
+                var targetId = children.attr('id');
+
+                if (sourceId != targetId) {
+                    var elementId = event.originalEvent.dataTransfer.getData("text/plain");
+
+                    $('#processing-modal').modal('toggle'); //before post
+
+
+                    // Post data 
+                    setTimeout(function () {
+                        var element = document.getElementById(elementId);
+                        children.prepend(element);
+                        $('#processing-modal').modal('toggle'); // after post
+                    }, 1000);
+
+                }
+
+                event.preventDefault();
+            });
+        }
+	</script>
+
+
+</body></html>
