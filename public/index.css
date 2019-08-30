@@ -368,7 +368,7 @@ html {
 
 body {
     margin: 0;
-    background-image: url("https://media3.giphy.com/media/i6IqXuLaTdqRW/giphy.gif");
+    background-image: url("https://media0.giphy.com/media/WovSCyxuy290qVY24j/giphy.gif");
 }
 
 article,
@@ -1245,7 +1245,8 @@ pre code {
 }
 
 .row {
-	margin-left: 20%;
+    margin-left: 21.7%;
+    margin-top: 3%;
 }
 
 .col-xs-1,
