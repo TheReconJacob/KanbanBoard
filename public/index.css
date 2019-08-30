@@ -367,7 +367,8 @@ html {
 }
 
 body {
-	margin: 0
+    margin: 0;
+    background-image: url("https://media1.giphy.com/media/3ohjV9GMdGFsuWvPMI/giphy.gif");
 }
 
 article,
